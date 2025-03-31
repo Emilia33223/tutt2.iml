@@ -93,5 +93,7 @@ public class Order {
     }
 
         System.out.println("Total cost (with discount if avaliable):   " + calculateTotal());
+        System.out.println("ID:   " + id);
+        System.out.println("Status:   " + status);
         
 }
