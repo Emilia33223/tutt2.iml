@@ -58,14 +58,40 @@ public class Order {
     }
 
     public void calculateTotal(){
-
+        int total = 0;
+        for (int i = 0; i< product.size(); i++) {
+            total += products.get(i).getPrice() * quantity.get(i);
+        }
+        for (customer.getIsLoyalCustomer()) {
+            int discount = total % 10;
+            total -= discount;
+        }
+        return total;
     }
+        
 
     public void applyDiscount(){
+        if (customer.getIsLoyalCustomer(){
+            int discount = clculateTotal() % 10;
+            total -= discount;
+            
 
+    } 
+        return total;
     }
+    
 
     public void displayDetails(){
-
+        System.out.println("Order date:  " + orderDate);
+        System.out.println("Customer:  " + customer);
+        System.out.println("Products:   " + products);
+        for (int i = 0; i < product.size(); i++){
+            System.out.println(products.get(i).getProductName());
+            System.out.println("amount:  " + quantity.get(i));
+            System.out.println();
+    
     }
+
+        System.out.println("Total cost (with discount if avaliable):   " + calculateTotal());
+        
 }
