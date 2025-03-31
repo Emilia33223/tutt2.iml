@@ -45,8 +45,8 @@ public class Customer {
         isLoyalCustomer = loyalCustomer;
     }
 
-    private String email;
-    private boolean isLoyalCustomer;
+    public String email;
+    public boolean isLoyalCustomer;
 
     public void displayInfo() {
         System.out.println("ID: " + id);
@@ -54,6 +54,8 @@ public class Customer {
         System.out.println("Last Name: " + lastName);
         System.out.println("Email: " + email);
         System.out.println("Loyal src.Customer: " + isLoyalCustomer);
+
+        return 0;
 
     }
 }
