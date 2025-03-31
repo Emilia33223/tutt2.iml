@@ -50,10 +50,10 @@ public class Product {
 
 
 
-        public int displayInfo(){
-
-
-            return 0;
+        public String displayInfo(){
+                System.out.println("Product Name:  " + productName + "category:  " + category + "Id: " + id);
+                
+            return "Product Name:  " + productName + "category:  " + category + "Id: " + id);
         }
 
 
