@@ -58,29 +58,55 @@ public class ComputerStore {
     }
 
     public void addProduct(Product product){
+        this.productsInStore.add(products);
+        productCount = productsInStore.size();
+        
 
     }
 
     public void addCustomer(Customer customer){
-
+        this.customers.add(customer);
+        
     }
     public Order createOrder(Customer customer, Product[] products, int[] quantities){
+        
 
         return null;
     }
 
     public void updateStockAfterOrder(Order order){
-
+        boolean result = true;
+        int counter = 0;
+        for (Product Product :order.getProducts()) {
+            int id = product.getId();
+            for (Product productInStore : productsInStore) {
+                if (productInStore.getId() == Id) {
+                    productInStore.setQuantityInStock(productInStore.getQuantityInStock();
+                    counter++;
+                
+            }
+        }
     }
-    public void changeOrderStatus(int orderId, String newStatus){
+        return result;
+        
+    }
+    public void changeOrderStatus(int orderCount, String newStatus){
+        for (Order order : orders) {
+            if (order.orderCount() == orderCount) {
+                order.setStatus("complete");
+            }
+        }
 
     }
 
     public void displayProductsInCategory(String category){
+        
 
     }
 
-    public void displayCustomerOrders(int customerId){
+    public void displayCustomerOrders(int customerCount){
+        System.out.println("Customers Order  " + customerCount
+        
 
     }
 
