@@ -60,13 +60,11 @@ public class ComputerStore {
     public void addProduct(Product product){
         this.productsInStore.add(products);
         productCount = productsInStore.size();
-        
-
     }
 
     public void addCustomer(Customer customer){
-        this.customers.add(customer);
-        
+        this.customer.add(customer);
+    
     }
     public Order createOrder(Customer customer, Product[] products, int[] quantities){
         
